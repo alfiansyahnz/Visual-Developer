@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Layuuting</string>
+    <string name="hint_edit_text">Ketikan Nama Anda</string>
+    <string name="desc_welcome">Sertakan Gambar profl Anda untuk melengkapi profil.</string>
+    <string name="welcome">Selamat Datang!</string>
+    <string name="btn_text">Selesai</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

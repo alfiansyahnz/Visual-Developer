@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_validation"
+    tools:context=".Screen1Activity">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/TextSizeBig"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_desc_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_welcome"
+        android:layout_marginTop="90dp"
+        android:text="@string/desc_welcome"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/TextSizeBig"
+        android:textStyle="normal" />
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/tv_desc_welcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_add_photo_" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginLeft="@dimen/marginButton"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="@dimen/margin"
+        android:layout_marginRight="@dimen/marginButton"
+        android:layout_marginBottom="@dimen/margin"
+        android:background="@drawable/text_field"
+        android:hint="@string/hint_edit_text"
+        android:textColorHint="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="319dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/et_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/marginButton"
+        android:layout_marginLeft="@dimen/marginButton"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="@dimen/marginButton"
+        android:layout_marginRight="@dimen/marginButton"
+        android:layout_marginBottom="@dimen/marginButton"
+        android:background="@drawable/btn_image_state"
+        android:text="@string/btn_text"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>

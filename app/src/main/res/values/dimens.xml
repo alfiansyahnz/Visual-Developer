@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">16dp</dimen>
+    <dimen name="marginButton">10dp</dimen>
+    <dimen name="TextSizeBig">16sp</dimen>
+    <dimen name="TextSizeMedium">14sp</dimen>
+    <dimen name="TextSizeNormal">12sp</dimen>
+
+
+
+</resources>

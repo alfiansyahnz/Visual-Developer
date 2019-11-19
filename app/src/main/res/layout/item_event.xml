@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/card_view_event"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="137dp"
+            android:layout_height="192dp"
+            android:layout_alignParentEnd="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_marginBottom="8dp"
+            android:layout_toStartOf="@id/item_image"
+            android:text="Title"
+            android:textSize="@dimen/TextSizeBig"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_title"
+            android:layout_toLeftOf="@id/item_image"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_toStartOf="@id/item_image"
+            android:text="Date"
+            android:textColor="@color/colorGold"
+            android:textSize="@dimen/TextSizeNormal"
+            card_view:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/item_desc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/item_date"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_toStartOf="@id/item_image"
+            android:layout_toLeftOf="@id/item_image"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="Desc"
+            android:textSize="@dimen/TextSizeMedium"
+            card_view:ignore="RtlHardcoded" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
